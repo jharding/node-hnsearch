@@ -29,5 +29,7 @@ function search(endpoint, query, cb) {
   , json: true
   };
 
-  request.get(opts, function(err, response, body) { cb(err, body); });
+  request.get(opts, function(err, response, body) {
+    response.statusCode >= 400 ? cb(body) : cb(err, body);
+  });
 }
