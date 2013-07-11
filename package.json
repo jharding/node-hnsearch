@@ -10,8 +10,13 @@
   "dependencies": {
     "request": "~2"
   },
-  "devDependencies": {},
-  "scripts": {},
+  "devDependencies": {
+    "mocha": ">= 1.11.0",
+    "should": ">= 1.2.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/jharding/node-hnsearch.git"

@@ -14,6 +14,14 @@ Installation
 $ npm install hnsearch
 ```
 
+Or install via git clone:
+
+```
+$ git clone git://github.com/jharding/node-hnsearch.git
+$ cd node-hnsearch
+$ npm install
+```
+
 ### Require
 
 ```javascript
@@ -49,8 +57,6 @@ hnsearch.submissions({ q: 'javascript semicolons' }, function(err, response) {
 
 Testing
 -------
-
-No tests yet! As soon as there are some though, you'll be able to run them as follows:
 
 ```
 $ cd node-hnsearch
